@@ -1,0 +1,14 @@
+{
+    "name": "takeawaytown/laravel-restaurant",
+    "description": "A package for building a restaurant website using Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Scott",
+            "email": "codetheorist@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
