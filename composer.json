@@ -24,5 +24,25 @@
         "orchestra/testbench": "~3.1",
         "phpunit/php-code-coverage": "^5.2@dev",
         "codeclimate/php-test-reporter": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "TakeawayTown\\LaravelRestaurant\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TakeawayTown\\LaravelRestaurant\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TakeawayTown\\LaravelRestaurant\\RestaurantServiceProvider"
+            ],
+            "aliases": {
+                "Restaurant": "TakeawayTown\\LaravelRestaurant\\Restaurant"
+            }
+        }
     }
 }
