@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1510769588">
-  <project timestamp="1510769588">
+<coverage generated="1510770104">
+  <project timestamp="1510770104">
     <package name="TakeawayTown\LaravelRestaurant\Facades">
       <file name="/var/www/takeawaytown/packages/laravel-restaurant/src/Facades/Restaurant.php">
         <class name="Restaurant" namespace="TakeawayTown\LaravelRestaurant\Facades">

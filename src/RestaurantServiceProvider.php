@@ -1,6 +1,6 @@
 <?php
 
-namespace Mpociot\Teamwork;
+namespace TakeawayTown\Restaurant;
 
 use Illuminate\Support\ServiceProvider;
 
