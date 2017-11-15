@@ -1,6 +1,6 @@
 <?php
 
-namespace TakeawayTown\Restaurant;
+namespace TakeawayTown\LaravelRestaurant;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -29,10 +29,11 @@ class RestaurantServiceProvider extends ServiceProvider
      */
     protected function publishConfig()
     {
-        // Publish config files
-        $this->publishes( [
-            __DIR__ . '/../../config/config.php' => config_path( 'restaurant.php' ),
-        ] );
+        if (function_exists('config_path')) {
+            $this->publishes([
+                realpath(__DIR__ . '/../config/config.php') => config_path('restaurant.php'),
+            ]);
+        }
     }
 
     /**
@@ -44,7 +45,7 @@ class RestaurantServiceProvider extends ServiceProvider
             // Publish the migration
             $timestamp = date('Y_m_d_His', time());
             $this->publishes([
-                __DIR__.'/../database/migrations/restaurant_setup_tables.php.stub' => database_path('migrations/'.$timestamp.'_restaurant_setup_tables.php'),
+                __DIR__.'/../database/restaurant_setup_tables.php.stub' => database_path('migrations/'.$timestamp.'_restaurant_setup_tables.php'),
               ], 'migrations');
         }
     }
@@ -59,7 +60,6 @@ class RestaurantServiceProvider extends ServiceProvider
         $this->mergeConfig();
         $this->registerRestaurant();
         $this->registerFacade();
-        $this->registerCommands();
     }
 
     /**
@@ -96,17 +96,5 @@ class RestaurantServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__ . '/../config/config.php', 'restaurant'
         );
-    }
-
-    /**
-     * Register scaffolding command
-     */
-    protected function registerCommands()
-    {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                Commands\MakeRestaurant::class,
-            ]);
-        }
     }
 }

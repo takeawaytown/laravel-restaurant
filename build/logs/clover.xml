@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1510770104">
-  <project timestamp="1510770104">
+<coverage generated="1510771058">
+  <project timestamp="1510771058">
     <package name="TakeawayTown\LaravelRestaurant\Facades">
       <file name="/var/www/takeawaytown/packages/laravel-restaurant/src/Facades/Restaurant.php">
         <class name="Restaurant" namespace="TakeawayTown\LaravelRestaurant\Facades">
@@ -29,9 +29,9 @@
         <metrics loc="33" ncloc="20" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
       </file>
     </package>
-    <package name="Mpociot\Teamwork">
+    <package name="TakeawayTown\Restaurant">
       <file name="/var/www/takeawaytown/packages/laravel-restaurant/src/RestaurantServiceProvider.php">
-        <class name="RestaurantServiceProvider" namespace="Mpociot\Teamwork">
+        <class name="RestaurantServiceProvider" namespace="TakeawayTown\Restaurant">
           <metrics complexity="11" methods="8" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="43" coveredstatements="0" elements="51" coveredelements="0"/>
         </class>
         <line num="21" type="method" name="boot" visibility="public" complexity="1" crap="2" count="0"/>
