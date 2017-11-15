@@ -14,7 +14,7 @@ class Restaurant
     public $app;
 
     /**
-     * Create a new Teamwork instance.
+     * Create a new Restaurant instance.
      *
      * @param \Illuminate\Foundation\Application $app
      */
@@ -23,4 +23,11 @@ class Restaurant
         $this->app = $app;
     }
 
+    /**
+     * Get the currently authenticated user or null.
+     */
+    public function user()
+    {
+        return $this->app->auth->user();
+    }
 }
