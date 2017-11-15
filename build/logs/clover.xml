@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1510771058">
-  <project timestamp="1510771058">
+<coverage generated="1510771681">
+  <project timestamp="1510771681">
     <package name="TakeawayTown\LaravelRestaurant\Facades">
       <file name="/var/www/takeawaytown/packages/laravel-restaurant/src/Facades/Restaurant.php">
         <class name="Restaurant" namespace="TakeawayTown\LaravelRestaurant\Facades">
@@ -28,34 +28,33 @@
         <line num="32" type="stmt" count="0"/>
         <metrics loc="33" ncloc="20" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
       </file>
-    </package>
-    <package name="TakeawayTown\Restaurant">
       <file name="/var/www/takeawaytown/packages/laravel-restaurant/src/RestaurantServiceProvider.php">
-        <class name="RestaurantServiceProvider" namespace="TakeawayTown\Restaurant">
-          <metrics complexity="11" methods="8" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="43" coveredstatements="0" elements="51" coveredelements="0"/>
+        <class name="RestaurantServiceProvider" namespace="TakeawayTown\LaravelRestaurant">
+          <metrics complexity="10" methods="7" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="37" coveredstatements="0" elements="44" coveredelements="0"/>
         </class>
         <line num="21" type="method" name="boot" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="22" type="stmt" count="0"/>
         <line num="23" type="stmt" count="0"/>
         <line num="24" type="stmt" count="0"/>
         <line num="25" type="stmt" count="0"/>
-        <line num="30" type="method" name="publishConfig" visibility="protected" complexity="1" crap="2" count="0"/>
+        <line num="30" type="method" name="publishConfig" visibility="protected" complexity="2" crap="6" count="0"/>
         <line num="31" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="0"/>
         <line num="33" type="stmt" count="0"/>
         <line num="34" type="stmt" count="0"/>
         <line num="35" type="stmt" count="0"/>
         <line num="36" type="stmt" count="0"/>
-        <line num="41" type="method" name="publishMigration" visibility="protected" complexity="2" crap="6" count="0"/>
-        <line num="42" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="42" type="method" name="publishMigration" visibility="protected" complexity="2" crap="6" count="0"/>
         <line num="43" type="stmt" count="0"/>
-        <line num="45" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
         <line num="46" type="stmt" count="0"/>
         <line num="47" type="stmt" count="0"/>
         <line num="48" type="stmt" count="0"/>
         <line num="49" type="stmt" count="0"/>
         <line num="50" type="stmt" count="0"/>
-        <line num="57" type="method" name="register" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="58" type="stmt" count="0"/>
+        <line num="51" type="stmt" count="0"/>
+        <line num="58" type="method" name="register" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="59" type="stmt" count="0"/>
         <line num="60" type="stmt" count="0"/>
         <line num="61" type="stmt" count="0"/>
@@ -78,17 +77,9 @@
         <line num="97" type="stmt" count="0"/>
         <line num="98" type="stmt" count="0"/>
         <line num="99" type="stmt" count="0"/>
-        <line num="104" type="method" name="registerCommands" visibility="protected" complexity="2" crap="6" count="0"/>
-        <line num="105" type="stmt" count="0"/>
-        <line num="106" type="stmt" count="0"/>
-        <line num="107" type="stmt" count="0"/>
-        <line num="108" type="stmt" count="0"/>
-        <line num="109" type="stmt" count="0"/>
-        <line num="110" type="stmt" count="0"/>
-        <line num="111" type="stmt" count="0"/>
-        <metrics loc="112" ncloc="69" classes="1" methods="8" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="0" elements="52" coveredelements="0"/>
+        <metrics loc="100" ncloc="62" classes="1" methods="7" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="38" coveredstatements="0" elements="45" coveredelements="0"/>
       </file>
     </package>
-    <metrics files="3" loc="161" ncloc="100" classes="3" methods="11" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="53" coveredstatements="0" elements="64" coveredelements="0"/>
+    <metrics files="3" loc="149" ncloc="93" classes="3" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="47" coveredstatements="0" elements="57" coveredelements="0"/>
   </project>
 </coverage>

@@ -86,6 +86,7 @@ class RestaurantServiceProvider extends ServiceProvider
             $loader->alias('Restaurant', 'TakeawayTown\LaravelRestaurant\Facades\Restaurant');
         });
     }
+
     /**
      * Merges user's and restaurant's configs.
      *
